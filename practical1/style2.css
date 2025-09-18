@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.hero {
+  background-color: #5a76dc;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.products, .sales, .benefits {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
+  padding: 10px;
+  width: 150px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.sales table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.sales th, .sales td {
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+
+.sales th {
+  background-color: #e0e0e0;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
