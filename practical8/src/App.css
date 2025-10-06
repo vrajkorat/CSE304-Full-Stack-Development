@@ -1,0 +1,60 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #ffffff; /* White background */
+  padding: 20px;
+  color: #000000; /* Black text */
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #0d47a1; /* Deep Blue heading */
+}
+
+.counter {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #000000; /* Black counter */
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* General button style */
+button {
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #1976d2; /* Blue */
+  color: #ffffff; /* White text */
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #1565c0; /* Darker blue */
+}
+
+button:disabled {
+  background-color: #b0bec5; /* Grayish when disabled */
+  cursor: not-allowed;
+}
+
+/* Reset button (Red accent) */
+.reset {
+  background-color: #d32f2f; /* Red */
+}
+
+.reset:hover {
+  background-color: #b71c1c; /* Darker red */
+}

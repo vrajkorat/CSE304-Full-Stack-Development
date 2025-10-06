@@ -1,0 +1,86 @@
+/* Layout */
+.container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  left: -250px; /* hidden by default */
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #a996d3;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+/* Nav links */
+.nav-link {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #ddd;
+}
+
+/* Close button inside sidebar */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  float: right;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Hamburger button */
+.hamburger {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1100;
+  font-size: 24px;
+  background: #d96c6c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  margin-left: 0;
+  padding: 40px;
+  width: 100%;
+}
+
+.section {
+  min-height: 80vh;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
