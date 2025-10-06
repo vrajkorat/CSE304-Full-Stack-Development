@@ -1,0 +1,88 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Calculator container styling with glass effect */
+.calculator {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  color: #fff;
+}
+
+/* Display styling with glassy effect */
+.display {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 20px 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  text-align: right;
+  min-height: 60px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Result smaller text */
+.result {
+  font-size: 0.85em;
+  color: #ddd;
+}
+
+/* Row for button groups */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+
+/* Operator row */
+.operator-row .btn {
+  flex: 1;
+  margin: 0 3px;
+}
+
+/* Button styling */
+.btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 10px;
+  padding: 18px 0;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+  flex: 1;
+  margin: 3px;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(5px);
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* Operator buttons with gradient */
+.operator {
+  background: linear-gradient(45deg, #43cea2, #185a9d);
+}
+
+.operator:hover {
+  background: linear-gradient(45deg, #185a9d, #43cea2);
+}

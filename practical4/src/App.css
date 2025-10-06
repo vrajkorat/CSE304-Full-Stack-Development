@@ -1,0 +1,26 @@
+/* Container Styling for App.js */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 40px 30px;
+  max-width: 400px; /* Set fixed max width */
+  width: 90%; /* Responsive for small screens */
+  margin: 30px auto; /* Center horizontally with margin from top */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+  color: #fff;
+}
+
+/* For body to center the container vertically as well */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
