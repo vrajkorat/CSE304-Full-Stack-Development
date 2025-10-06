@@ -1,0 +1,98 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container with glassmorphism effect */
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 40px 30px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+}
+
+/* Title Styling */
+.title {
+  font-size: 2em;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Date and Time Styling */
+.date, .time {
+  font-size: 1.4em;
+  margin: 8px 0;
+  color: #555;
+}
+
+/* Footer Styling */
+.footer {
+  margin-top: 25px;
+  font-size: 1em;
+  color: #666;
+  font-style: italic;
+}
+
+/* Fancy Name Styling with Neon Effect */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.fancy-name {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8em;
+  color: #00c6ff;
+  text-shadow:
+    0 0 5px #00c6ff,
+    0 0 10px #00c6ff,
+    0 0 20px #00c6ff,
+    0 0 40px #00c6ff;
+}
+
+/* Button Styling Example */
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00c6ff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #007acc;
+}
+
+/* Responsive text size for smaller screens */
+@media (max-width: 500px) {
+  .title {
+    font-size: 1.6em;
+  }
+  
+  .date, .time {
+    font-size: 1.2em;
+  }
+
+  .fancy-name {
+    font-size: 1.5em;
+  }
+}
